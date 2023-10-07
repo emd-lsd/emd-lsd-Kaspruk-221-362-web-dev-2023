@@ -1,0 +1,322 @@
+
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+body{
+    background: #eeeeee;
+    color: #30303b;
+    
+}
+header{
+    
+    background-color: #808080;
+    margin-top: 0;
+    margin-bottom: 50px;
+    
+    /*margin-top: -20px;
+    padding: -20;*/
+}
+.text-label{
+    font-family: 'Playfair Display', serif;
+    color: #0000FF;
+    font-size: 40px;
+    margin-left: 30px;
+    padding-bottom: 25px;
+    margin-top: -5px;
+}
+ul.header_menu {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 20px; /* Значение полей */
+    margin-left: 25px;
+}
+
+ul.header_menu li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 15px; /* Отступ слева */
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: black;
+}
+
+.header-style{
+    padding-top: 15px;
+}
+
+.header_menu-label{
+    float: right;
+    margin-right: 5%;
+    margin-top: -75px;
+    width: 500px;
+    height: auto;
+    
+}
+.menu-item{
+    text-decoration: none;
+    color: black;
+}
+.menu-item:visited{
+    color: black;
+}
+.auth-link{
+    float: right;
+    margin-right: 8%;
+    margin-top: -3%;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+.auth-link a{
+    color: black;
+}
+
+TH, TD {
+    border: 1px solid black; /* Параметры рамки */
+    padding: 10px; /* Поля вокруг текста */
+}
+
+TH { 
+    text-align: left; /* Выравнивание по левому краю */
+    color: black;
+}
+TD {
+    text-align: center; /* Выравнивание по центру */
+    color: black;
+    text-decoration: none;
+}
+
+.table{
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    
+}
+.table-content{
+    text-decoration: none;
+    color: black;
+}
+
+footer{
+    font-family: 'Playfair Display', serif;
+    
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #808080; /* Цвет фона футера */
+            color: #fff; /* Цвет текста внутри футера */
+            text-align: center; /* Выравнивание текста по центру */
+            padding: 10px 0; /* Отступы сверху и снизу */
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    gap: 40px;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-size:16px;
+    font-weight: 500;
+    font-family: 'Lora', serif;
+    text-align: justify;
+}
+
+.label2{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: large;
+}
+.text1{
+    text-align: left;
+    color: black;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('fon.jpg'); /* Замените 'background.jpg' на путь к вашему фоновому изображению */
+    background-size: cover;
+    background-position: center;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    color: black;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.auth-form input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.auth-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.backup{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color:#0000FF;
+    
+}
+.auth-form h1{
+    margin-bottom: 5px;
+}
+.communication{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.communication form{
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+.communication form h1{
+    color: black;
+    font-size: larger;
+    margin-bottom: 5px;
+}
+.communication form label{
+    color: black;
+}
+.com-inp{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.lab-fr{
+    margin-bottom: 20px;
+}
+.communication form textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
