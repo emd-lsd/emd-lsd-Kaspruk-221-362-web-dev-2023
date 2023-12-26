@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Результаты работы скриптов</title>
+</head>
+<body>
+    <h1>Результаты работы скриптов</h1>
+    <script>
+        // Функция возведения в степень
+        function pow(x, n) {
+            let result = 1;
+            for (let i = 0; i < n; i++) {
+                result *= x;
+            }
+            return result;
+        }
+
+        // Функция нахождения НОД
+        function gcd(a, b) {
+            while (b !== 0) {
+                let temp = b;
+                b = a % b;
+                a = temp;
+            }
+            return a;
+        }
+
+        // Функция наименьшей цифры
+        function minDigit(x) {
+            let digits = x.toString().split('').map(Number);
+            return Math.min(...digits);
+        }
+
+        // Функция pluralizeRecords
+        function pluralizeRecords(n) {
+            let result = '';
+            if (n % 10 === 1 && n % 100 !== 11) {
+                result = `В результате выполнения запроса была найдена ${n} запись`;
+            } else if (n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 10 || n % 100 >= 20)) {
+                result = `В результате выполнения запроса было найдено ${n} записи`;
+            } else {
+                result = `В результате выполнения запроса было найдено ${n} записей`;
+            }
+            return result;
+        }
+
+        
+
+        // Функция чисел Фибоначчи
+        function fibb(n) {
+            if (n === 0) return 0;
+            if (n === 1) return 1;
+            let a = 0;
+            let b = 1;
+            let result = 0;
+            for (let i = 2; i <= n; i++) {
+                result = a + b;
+                a = b;
+                b = result;
+            }
+            return result;
+        }
+
+        // Вызов функций и вывод результатов
+        document.write(`Результат возведения числа 2 в степень 5: ${pow(2, )}<br>`);
+        document.write(`Наибольший общий делитель чисел 18 и 24: ${gcd(36, 24)}<br>`);
+        document.write(`Наименьшая цифра числа 17562: ${minDigit(1024)}<br>`);
+        document.write(`${pluralizeRecords(21)}<br>`);
+        document.write(`10-е число Фибоначчи: ${fibb(51)}<br>`);
+    </script>
+</body>
+</html>
